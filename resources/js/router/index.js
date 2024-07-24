@@ -6,6 +6,11 @@ const routes = [
         path: '/',
         name: 'products.index',
         component: productIndex
+    },
+    {
+        path: '/:pathMatch(.*)*',
+        name: 'not_found',
+        component: notFound
     }
 
 ]
